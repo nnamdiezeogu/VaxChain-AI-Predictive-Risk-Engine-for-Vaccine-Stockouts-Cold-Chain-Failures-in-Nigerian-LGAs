@@ -3,6 +3,7 @@
 ## Predictive Last-Mile Vaccine Stockouts & Cold Chain Failures in Nigerian LGAs
 
 **Focus: North West Nigeria (Kano, Katsina, and Jigawa LGAs)**
+
 **VaxChain-AI** is a machine learning risk engine developed for the **3MTT x IndentArk AI Hackathon Challenge** with the theme *"Build AI. Solve Local."*. The platform shifts last-mile immunization delivery from a reactive system to a predictive one, helping intercept infrastructure failures across high-burden Local Government Areas within the Kano Electricity Distribution Company (KEDCO) operational footprint.
 
 ---
