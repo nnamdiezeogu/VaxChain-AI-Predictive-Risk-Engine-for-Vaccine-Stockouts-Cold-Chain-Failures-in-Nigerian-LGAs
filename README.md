@@ -91,7 +91,7 @@ The predictive model was trained using a Random Forest Classifier with class wei
 - f1-score (Stockout Class)     58%
 
 **Confusion Matrix Analysis**
-![alt text](image.png)
+![alt text](confusion_matrix.png)
 
 **Key Insight**:
 
