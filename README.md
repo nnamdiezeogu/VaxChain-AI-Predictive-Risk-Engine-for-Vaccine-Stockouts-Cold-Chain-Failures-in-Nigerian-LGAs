@@ -1,6 +1,4 @@
-# VaxChain-AI
-
-## Predictive Last-Mile Vaccine Stockouts & Cold Chain Failures in Nigerian LGAs
+# VaxChain-AI: Predictive Risk Engine for Vaccine Stockouts & Cold Chain Failures in Nigerian LGAs
 
 **Focus: North West Nigeria (Kano, Katsina, and Jigawa LGAs)**
 
@@ -16,8 +14,8 @@ For this demonstration, VaxChain-AI focuses on the region by modelling the infra
 
 Primary Health Centers (PHCs) in those states form the backbone of childhood immunization delivery but face severe localized challenges:
 
--**Power Grid Outages**: Frequent load shedding on KEDCO lines cause ice-lined equipment to experience dangerous temperature rises.
--**Transit Latency**: Remote rural PHCs often run out of essential vaccines long before the next restocking arrives.
+- **Power Grid Outages**: Frequent load shedding on KEDCO lines cause ice-lined equipment to experience dangerous temperature rises.
+- **Transit Latency**: Remote rural PHCs often run out of essential vaccines long before the next restocking arrives.
 
 ---
 
@@ -33,13 +31,11 @@ Due to security restrictions on live government systems, VaxChain-AI utilized an
 
 ## Repository Structure
 
-'''text
-data_engine.py          # Step 1: Ingest GRID3 data and generate KEDCO franchise logs
-machine_learning.py     # Step 2: Train ML model and perform LGA-level aggrgations
-app.py                  # step 3: Stramlit interactive geospatial dashboard
-requirements.txt        # Python dependencies
-README.md               # Project documentation
-'''
+1. **data_engine.py:**                Ingest GRID3 data and generate KEDCO franchise logs
+2. **machine_learning.py:**           Train ML model and perform LGA-level aggrgations
+3. **app.py:**                        Stramlit interactive geospatial dashboard
+4. **requirements.txt:**              Python dependencies
+5. **README.md:**                     Project documentation
 
 ---
 
@@ -95,15 +91,10 @@ The predictive model was trained using a Random Forest Classifier with class wei
 - f1-score (Stockout Class)     58%
 
 **Confusion Matrix Analysis**
-[[566  233]
- [87   217]]
-
-- True Positives (217): The model correctly captured 217 actual stockouts.
-- False Negatives (87): It missed 87 actual stockouts.
-- False negatives (233): It raised 233 false alarms.
-- True Negatives (566): It correctly identified 566 normal situations.
+![alt text](image.png)
 
 **Key Insight**:
+
 Using a balanced class weighting improved the model's ability to detect actual stockouts and cold chain failures. Further, the model proved good at detecting real problems (217 out of 304 actual stockouts or 71% recall). However, there is still a high number of false alarms (233), even though it correctly identified 566 normal situations.
 
 ### Why the Results Matter
